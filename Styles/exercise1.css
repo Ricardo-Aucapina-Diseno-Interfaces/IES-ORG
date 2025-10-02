@@ -1,10 +1,11 @@
 :root {
-    --color-principal: hsl(202, 100%, 21%);
-    --color-secundario: hsl(182, 99%, 30%);
-    --color-texto: hsl(43, 36%, 84%);
+    --color-principal: #e5ddc8;
+    --color-secundario: #00446b;
+    --color-nav: #019398;
     --color-destacado: hsl(347, 75%, 49%);
-    --color-texto-secundario: hsl(0, 100%, 0%);
-    --color-cajas:hsl(202, 75%, 31%);
+    --color-texto-principal:#fffef8;
+    --color-texto-secundario: #000000;
+    --color-fondo:#00446be9;
 }
 
 @font-face {
@@ -30,7 +31,7 @@ body {
 }
 
 header {
-    background-color: var(--color-texto);
+    background-color: var(--color-principal);
     text-align: center;
     padding: 1rem;
     /* min-height: 16dvh; */
@@ -48,7 +49,7 @@ h2 {
 
 h1 {
     font-size: 2.5rem;
-    color: var(--color-principal);
+    color: var(--color-secundario);
 }
 
 nav{
@@ -57,7 +58,7 @@ nav{
 
 nav ul {
     list-style-type: none;
-    background-color: var(--color-secundario);
+    background-color: var(--color-nav);
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0;
@@ -74,8 +75,8 @@ nav ul li {
 }
 
 main {
-    background-color: var(--color-principal);
-    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
     min-height: 70dvh;
     display: flex;
     gap: 4rem;
@@ -96,14 +97,14 @@ section {
     -webkit-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75);
     border-radius: 0.75rem;
-    background-color: var(--color-cajas);
+    background-color: var(--color-secundario);
     height: fit-content;
 }
 
 section h2 {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--color-texto);
+    color: var(--color-principal);
 }
 
 section p {
@@ -112,8 +113,8 @@ section p {
 }
 
 footer {
-    background-color: var(--color-texto);
-    color: var(--color-principal);
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
